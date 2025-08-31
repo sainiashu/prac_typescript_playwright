@@ -1,9 +1,8 @@
-export function reverse(sentence: string): string{
-    const words= sentence.split(" ");
-    return words.reverse().join(" ");
-
+function reverse(sentence: string): string{
+    const sent = sentence.split(" ")
+    return sent.reverse().join(" ")
 }
 
-if (require.main === module){
-    console.log(reverse("Test the function"));
+if(require.main===module){
+    console.log(reverse("Best Practices"))
 }

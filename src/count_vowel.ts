@@ -1,8 +1,9 @@
-export function countVowel(input: string): number{
-    const matches = input.match(/[aeiou]/gi)
-    return matches ? matches.length : 0
+function countVowel(str: string): number{
+
+    const vowelCount = str.match(/[aeiou]/gi)
+    return vowelCount ? vowelCount.length :0
 }
 
-if (require.main===module){
+if(require.main===module){
     console.log(countVowel("Testing"))
 }

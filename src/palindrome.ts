@@ -1,9 +1,8 @@
-export function isPalidrone(word:string): boolean{
-
-    const noramlized = word.replace(/\s+/g,"").toLowerCase()
-    return noramlized ===noramlized.split("").reverse().join("")
+export function isPalindrome(str : string): boolean{
+    const word  = str.replace(/[^a-zA-z0-9]/g, '').toLowerCase()
+    return word === word.split("").reverse().join("")
 }
 
 if(require.main===module){
-    console.log(isPalidrone('Race car'))
+    console.log(isPalindrome('racecar'))
 }

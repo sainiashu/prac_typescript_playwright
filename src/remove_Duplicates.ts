@@ -1,8 +1,7 @@
-export function removeDuplicates(num : number[]):number[]{
-    return Array.from(new Set(num));
-
+export function removeDuplicate(num: number[]): number[]{
+    return Array.from(new Set(num))
 }
 
 if(require.main===module){
-    console.log(removeDuplicates([1,2,3,3,4,3,]));
+    console.log(removeDuplicate([1,2,2,3,4,4,5]))
 }
