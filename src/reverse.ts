@@ -1,5 +1,5 @@
-function reverse(sentence: string): string{
-    const sent = sentence.split(" ")
+export function reverse(input: string): string{
+    const sent = input.split(" ")
     return sent.reverse().join(" ")
 }
 

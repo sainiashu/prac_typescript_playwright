@@ -7,8 +7,11 @@ test.only('upload file', async({page})=>{
     await page.goto('https://www.lambdatest.com/selenium-playground/upload-file-demo')
 
     //Option 1: Single File
-     await page.locator("#file").setInputFiles(path.join(__dirname, 'homepage.png'))
+    //  await page.locator("#file").setInputFiles(path.join(__dirname, 'homepage.png'))
+     
 
+    
+     
     
     // await page.waitForTimeout(1000)
        
